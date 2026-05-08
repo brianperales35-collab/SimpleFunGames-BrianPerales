@@ -11,4 +11,4 @@ A Word Scramble game project for IS311.
 ## How to Run
 Run Main.java
 
-Selct number for gamemode or to check high scores
+Select number for gamemode or to check high scores
