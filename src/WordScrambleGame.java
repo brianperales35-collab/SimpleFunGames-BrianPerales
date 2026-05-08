@@ -4,7 +4,7 @@ public class WordScrambleGame {
 
     //list of words that are possible to get
     private String[] words = {
-            "Millikin", "Football", "Greenwall", "Programming",
+            "Millikin", "Football", "Greenwell", "Programming",
             "Coding", "Scramble", "Soccer", "Cheerleading"
     };
 
