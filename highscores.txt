@@ -5,3 +5,5 @@ Test: 10
 War Player: 3
 Brian: 100
 Brian: 90
+War Player: 17
+Brian: 100

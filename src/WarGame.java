@@ -12,7 +12,7 @@ public class WarGame {
         Scanner input = new Scanner(System.in);
 
         //Fixed: Used to automatically generate each round. Now it requires the user to go through each round manually.
-        System.out.println("\n >>> WAR GAME STARTED <<< ");
+        System.out.println("\n >>> WAR GAME <<< ");
         System.out.println("Press Enter to flip cards for each round. Type q and press Enter to quit.");
 
         // Reduced: Now deals 5 cards instead of 25 to both the user and cpu to make rounds go faster
