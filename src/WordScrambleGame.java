@@ -33,7 +33,7 @@ public class WordScrambleGame {
             String guess = input.nextLine();
             attempts++;
 
-            if (guess.equalsIgnoreCase(word)) { 
+            if (guess.equalsIgnoreCase(word)) {
 
                 System.out.println("Correct!");
 
