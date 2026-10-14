@@ -2,15 +2,10 @@ import java.util.*;
 
 public class WordScrambleGame {
 
-    // Added 20+ Words to unscramble: list of words that are all Millikin University themed (School/Academic terms)
+    //list of words that are possible to get
     private String[] words = {
-            "Millikin", "Football", "University", "Programming",
-            "Coding", "Scramble", "Soccer", "Cheerleading", "Basketball",
-            "Soccer", "Baseball", "Campus", "Student", "Alumni", " Education",
-            "Learning", "Professor", "College", "Freshman", "Sophomore",
-            "Junior", "Senior", "Graduate", "Academics", "Degree", "Diploma",
-            "Lecture", "Honors", "Dean", "Major", "Minor", "Class", "Library",
-            "Scholarship", "Career", "Internships", "Dorms", "Bachelors"
+            "Millikin", "Football", "Greenwall", "Programming",
+            "Coding", "Scramble", "Soccer", "Cheerleading"
     };
 
     public void play() {
@@ -23,7 +18,7 @@ public class WordScrambleGame {
 
         int attempts = 0;
 
-        System.out.println("\n >>> WORD SCRAMBLE <<< ");
+        System.out.println("\n=== WORD SCRAMBLE ===");
 
         while (true) {
 
@@ -37,8 +32,7 @@ public class WordScrambleGame {
 
                 System.out.println("Correct!");
 
-                // Fixed: A correct first guess earns 100 points; each extra guess costs 10 points.
-                int score = Math.max(100 - (attempts - 1) * 10, 10);
+                int score = Math.max(100 - attempts * 10, 10);
                 System.out.println("Score: " + score);
 
                 System.out.print("Enter name: ");
@@ -58,18 +52,14 @@ public class WordScrambleGame {
 
         char[] arr = word.toCharArray();
 
-        String scrambled;
-        do {
-            for (int i = arr.length - 1; i > 0; i--) {
-                int j = (int) (Math.random() * (i + 1));
+        for (int i = 0; i < arr.length; i++) {
+            int j = (int)(Math.random() * arr.length);
 
-                char temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-            }
-            scrambled = new String(arr);
-        } while (scrambled.equalsIgnoreCase(word));
+            char temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
 
-        return scrambled;
+        return new String(arr);
     }
 }
