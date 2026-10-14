@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.logging.FileHandler;
 
 public class Main {
 
@@ -9,10 +8,9 @@ public class Main {
 
         WarGame war = new WarGame();
         WordScrambleGame scramble = new WordScrambleGame();
-
         while (true) {
 
-            System.out.println("\n=== Brian's GAME MENU ===");
+            System.out.println("\n >>> Brian's GAME MENU <<< ");
             System.out.println("1. War CardGame");
             System.out.println("2. Word Scramble");
             System.out.println("3. View High Scores");
@@ -27,7 +25,7 @@ public class Main {
                 switch (choice) {
 
                     case 1:
-                       new WarGame().play();
+                        war.play();
                         break;
 
                     case 2:

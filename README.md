@@ -1,2 +1,14 @@
-## Sample Code for Game Library
-Used by students to gain familiarity with GitHub and IntelliJ while working with Java. Code is meant for learning not industry use and may contain security holes and errors meant for learning opportunitties - use at own risk.
+# Word Scramble and War Game Project
+
+A Word Scramble and War game project for IS350.
+
+
+## Features
+- War Game
+- Word Scramble game
+- Score tracking with name
+
+## How to Run
+Run Main.java
+
+Select number for gamemode or to check high scores
