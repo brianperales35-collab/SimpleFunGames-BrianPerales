@@ -9,7 +9,7 @@ public class ScoreFileHandler {
             writer.close();
         } catch (IOException e) {
             System.out.println("Error saving score.");
-        }
+        } 
     }
 
     public static void readScores() {
