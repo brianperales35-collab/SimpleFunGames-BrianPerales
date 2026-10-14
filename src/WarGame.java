@@ -9,7 +9,7 @@ public class WarGame {
         Deck deck = new Deck();
         Queue<GameCard> player = new LinkedList<>();
         Queue<GameCard> cpu = new LinkedList<>();
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in); 
 
         //Fixed: Used to automatically generate each round. Now it requires the user to go through each round manually.
         System.out.println("\n >>> WAR GAME <<< ");

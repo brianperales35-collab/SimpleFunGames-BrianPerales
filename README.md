@@ -7,7 +7,7 @@ A Word Scramble and War game project for IS350.
 - War Game
 - Word Scramble game
 - Score tracking with names
-
+ 
 ## How to Run
 Run Main.java
 
