@@ -6,7 +6,7 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        WarGame war = new WarGame();
+        WarGame war = new WarGame(); 
         WordScrambleGame scramble = new WordScrambleGame();
         while (true) {
 
