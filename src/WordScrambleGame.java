@@ -23,7 +23,7 @@ public class WordScrambleGame {
 
         int attempts = 0;
 
-        System.out.println("\n | WORD SCRAMBLE | ");
+        System.out.println("\n >>> WORD SCRAMBLE <<< ");
 
         while (true) {
 
