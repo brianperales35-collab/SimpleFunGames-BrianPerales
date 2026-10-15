@@ -2,23 +2,22 @@ import java.util.*;
 
 public class Deck {
 
-    // Stores all cards in the deck
-    private List<GameCard> cards = new ArrayList<>();
+    // The deck of cards
+    private List<Cards> cards = new ArrayList<>();
 
-    // Card values
+    // All the possible cards available
     private String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"};
     private String[] ranks = {
-            "2","3","4","5","6","7","8","9","10",
-            "J","Q","K","A"
+            "2", "3", "4", "5", "6", "7", "8", "9",  "10", "A"
     };
 
     // Cards are shuffled
     public Deck() {
 
-        // Full set of cards provided
+        // Set of Cards
         for (String suit : suits) {
             for (String rank : ranks) {
-                cards.add(new GameCard(suit, rank));
+                cards.add(new Cards(suit, rank));
             }
         }
 
@@ -26,16 +25,15 @@ public class Deck {
         Collections.shuffle(cards);
     }
 
-    // Draws a card
-    public GameCard drawCard() {
+    // Draws a card to start the game
+    public Cards drawCard() {
 
-        // Makes sure nothing goes wrong
         if (cards.isEmpty()) {
             System.out.println("Deck is empty!");
             return null;
         }
 
-        // Gets rid of the previous card
+        // Gets rid of the used card
         return cards.remove(0);
     }
 

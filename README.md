@@ -11,4 +11,8 @@ A Word Scramble and War game project for IS350.
 ## How to Run
 Run Main.java
 
-Select number for gamemode or to check high scores
+Select a number 1-4 for gamemode or to check high scores
+
+Select number 4 to exit the menu 
+
+Have Fun!!!

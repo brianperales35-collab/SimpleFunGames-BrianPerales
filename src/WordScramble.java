@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class WordScrambleGame {
+public class WordScramble {
 
     // Added 20+ Words to unscramble: list of words that are all Millikin University themed (School/Academic terms)
     private String[] words = {
@@ -10,7 +10,8 @@ public class WordScrambleGame {
             "Learning", "Professor", "College", "Freshman", "Sophomore",
             "Junior", "Senior", "Graduate", "Academics", "Degree", "Diploma",
             "Lecture", "Honors", "Dean", "Major", "Minor", "Class", "Library",
-            "Scholarship", "Career", "Internships", "Dorms", "Bachelors"
+            "Scholarship", "Career", "Internships", "Dorms", "Bachelors", "Track",
+            "Homework", "Syllabus"
     };
 
     public void play() {
@@ -35,21 +36,21 @@ public class WordScrambleGame {
 
             if (guess.equalsIgnoreCase(word)) {
 
-                System.out.println("Correct!");
+                System.out.println("That is Correct!");
 
                 // Fixed: A correct first guess earns 100 points; each extra guess costs 10 points.
                 int score = Math.max(100 - (attempts - 1) * 10, 10);
                 System.out.println("Score: " + score);
 
-                System.out.print("Enter name: ");
+                System.out.print("Enter username: ");
                 String name = input.nextLine();
 
-                ScoreFileHandler.saveScore(name, score);
+                ScoreTracker.saveScore(name, score);
 
                 break;
 
             } else {
-                System.out.println("Wrong, try again.");
+                System.out.println("Unfortunately, that is wrong, try again.");
             }
         }
     }

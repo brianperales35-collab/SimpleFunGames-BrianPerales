@@ -1,9 +1,9 @@
-public class GameCard {
+public class Cards {
 
     String suit;
     String rank;
 
-    public GameCard(String suit, String rank) {
+    public Cards(String suit, String rank) {
         this.suit = suit;
         this.rank = rank;
     }

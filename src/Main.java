@@ -6,8 +6,8 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        WarGame war = new WarGame();
-        WordScrambleGame scramble = new WordScrambleGame();
+        War war = new War();
+        WordScramble scramble = new WordScramble();
         while (true) {
 
             System.out.println("\n >>> Brian's GAME MENU <<< ");
@@ -33,7 +33,7 @@ public class Main {
                         break;
 
                     case 3:
-                        ScoreFileHandler.readScores();
+                        ScoreTracker.readScores();
                         break;
 
                     case 4:
