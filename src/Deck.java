@@ -8,7 +8,7 @@ public class Deck {
     // All the possible cards available
     private String[] suits = {"Hearts", "Diamonds", "Clubs", "Spades"};
     private String[] ranks = {
-            "2", "3", "4", "5", "6", "7", "8", "9",  "10", "A"
+            "2", "3", "4", "5", "6", "7", "8", "9",  "10", "J", "Q", "K", "A"
     };
 
     // Cards are shuffled
